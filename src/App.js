@@ -1,5 +1,6 @@
 import Stopwatch from "./components/Stopwatch/Stopwatch.js";
 import Button from "./components/Button/Button.js";
+import Container from "./components/Container/Container.js";
 import React, {useEffect, useState} from "react";
 
 const App = () => {
@@ -24,12 +25,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <div>
+      <Container>
         <Stopwatch time={time} />
-      </div>
-      <div>
         <Button setTime={setTime} setTimeOn={setTimeOn}/>
-      </div>
+      </Container>
     </div>
   );
 }
